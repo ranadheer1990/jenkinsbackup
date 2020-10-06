@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: zgu
+Build-Jdk: 1.8.0_121
+Extension-Name: veracode-scan
+Specification-Title: The Jenkins Plugins Parent POM Project
+Implementation-Title: veracode-scan
+Implementation-Version: 20.6.10.0
+Group-Id: com.veracode.jenkins
+Short-Name: veracode-scan
+Long-Name: Veracode Scan
+Url: https://github.com/jenkinsci/veracode-scan-plugin
+Plugin-Version: 20.6.10.0
+Hudson-Version: 2.60
+Jenkins-Version: 2.60
+Plugin-Dependencies: structs:1.14
+Plugin-Developers: Veracode:veracode:support@veracode.com
+

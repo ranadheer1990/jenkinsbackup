@@ -1,0 +1,36 @@
+Started at Mon Oct 05 20:50:39 UTC 2020
+Processing job1
+Offering job1 to Project Build Discarder
+Processing job2_multibranch/master
+Offering job2_multibranch/master to Project Build Discarder
+Finished at Mon Oct 05 20:50:39 UTC 2020. 1ms
+Started at Mon Oct 05 21:50:39 UTC 2020
+Processing job1
+Offering job1 to Project Build Discarder
+Processing job2_multibranch/master
+Offering job2_multibranch/master to Project Build Discarder
+Finished at Mon Oct 05 21:50:39 UTC 2020. 1ms
+Started at Mon Oct 05 22:50:39 UTC 2020
+Processing job1
+Offering job1 to Project Build Discarder
+Processing job2_multibranch/master
+Offering job2_multibranch/master to Project Build Discarder
+Finished at Mon Oct 05 22:50:39 UTC 2020. 1ms
+Started at Mon Oct 05 23:50:39 UTC 2020
+Processing job1
+Offering job1 to Project Build Discarder
+Processing job2_multibranch/master
+Offering job2_multibranch/master to Project Build Discarder
+Finished at Mon Oct 05 23:50:39 UTC 2020. 0ms
+Started at Tue Oct 06 00:50:39 UTC 2020
+Processing job1
+Offering job1 to Project Build Discarder
+Processing job2_multibranch/master
+Offering job2_multibranch/master to Project Build Discarder
+Finished at Tue Oct 06 00:50:39 UTC 2020. 0ms
+Started at Tue Oct 06 01:50:39 UTC 2020
+Processing job1
+Offering job1 to Project Build Discarder
+Processing job2_multibranch/master
+Offering job2_multibranch/master to Project Build Discarder
+Finished at Tue Oct 06 01:50:39 UTC 2020. 0ms

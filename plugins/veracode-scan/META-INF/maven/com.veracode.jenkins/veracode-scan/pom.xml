@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Builds the Veracode Jenkins Plugin. -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.jenkins-ci.plugins</groupId>
+        <artifactId>plugin</artifactId>
+        <version>2.37</version>
+        <relativePath />
+    </parent>
+    <groupId>com.veracode.jenkins</groupId>
+    <artifactId>veracode-scan</artifactId>
+    <version>20.6.10.0</version>
+    <packaging>hpi</packaging>
+    <properties>
+        <!-- Baseline Jenkins version you use to build the plugin. Users must have this version or newer to run. -->
+        <jenkins.version>2.60</jenkins.version>
+        <java.level>8</java.level>
+        <!-- Other properties you may want to use:
+          ~ jenkins-test-harness.version: Jenkins Test Harness version you use to test the plugin. For Jenkins version >= 1.580.1 use JTH 2.0 or higher.
+          ~ hpi-plugin.version: The HPI Maven Plugin version used by the plugin..
+          ~ stapler-plugin.version: The Stapler Maven plugin version required by the plugin.
+     -->
+    </properties>
+    <name>Veracode Scan</name>
+    <!-- The default licence for Jenkins OSS Plugins is MIT. Substitute for the applicable one if needed. -->
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+    <dependencies>
+        <dependency>
+            <groupId>com.veracode.vosp.api.wrappers</groupId>
+            <!-- Artifact name and version of the java wrapper -->
+            <artifactId>vosp-api-wrappers-java</artifactId>
+            <version>19.11.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.owasp.esapi</groupId>
+            <artifactId>esapi</artifactId>
+            <version>2.2.0.0</version>
+            <scope>compile</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>*</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+	    <groupId>org.slf4j</groupId>
+	    <artifactId>slf4j-api</artifactId>
+	    <version>1.7.26
+	    </version>
+        </dependency>
+        <dependency>
+	    <groupId>org.apache.xmlgraphics</groupId>
+	    <artifactId>batik-css</artifactId>
+	    <version>1.11</version>
+        </dependency>
+
+	<dependency>
+	    <groupId>org.jenkins-ci</groupId>
+	    <artifactId>symbol-annotation</artifactId>
+	    <version>1.14</version>
+	</dependency>
+
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>structs</artifactId>
+            <version>1.14</version>
+        </dependency>
+    </dependencies>
+
+    <!-- If you want this to appear on the wiki page: -->
+    <developers>
+      <developer>
+        <id>veracode</id>
+        <name>Veracode</name>
+        <email>support@veracode.com</email>
+      </developer>
+    </developers>
+
+    <!-- Assuming you want to host on @jenkinsci: -->
+    <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
+    <scm>
+        <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
+        <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
+    </scm>
+
+    <repositories>
+        <repository>
+            <id>repo.jenkins-ci.org</id>
+            <url>https://repo.jenkins-ci.org/public/</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>repo.jenkins-ci.org</id>
+            <url>https://repo.jenkins-ci.org/public/</url>
+        </pluginRepository>
+    </pluginRepositories>
+    <build>
+		<plugins>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.5</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>report</id>
+						<phase>test</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

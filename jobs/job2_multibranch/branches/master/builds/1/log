@@ -1,0 +1,29 @@
+Branch indexing
+ > git rev-parse --is-inside-work-tree # timeout=10
+Setting origin to https://github.com/ranadheer-k/eShopOnWeb
+ > git config remote.origin.url https://github.com/ranadheer-k/eShopOnWeb # timeout=10
+Fetching origin...
+Fetching upstream changes from origin
+ > git --version # timeout=10
+ > git --version # 'git version 2.17.1'
+ > git config --get remote.origin.url # timeout=10
+ > git fetch --tags --progress -- origin +refs/heads/*:refs/remotes/origin/* # timeout=10
+Seen branch in repository origin/admin-page
+Seen branch in repository origin/ardalis/3_x_migration
+Seen branch in repository origin/ardalis/apis-and-updates
+Seen branch in repository origin/catalog-viewmodel-service
+Seen branch in repository origin/feature/enh-powerplatform-integ
+Seen branch in repository origin/issue-153/remove-basket-items-if-basket-deleted
+Seen branch in repository origin/master
+Seen branch in repository origin/netcore2.0
+Seen branch in repository origin/netcore2.1
+Seen branch in repository origin/netcore3.0
+Seen branch in repository origin/return-error-to-user-from-ApplicationCore
+Seen branch in repository origin/selenium
+Seen branch in repository origin/working-with-solution
+Seen 13 remote branches
+Obtained Jenkinsfile from df3b1261b9fb67901a96e4e3e766a08d8b6d53eb
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4EELMJQkCavkf0+e8Ou83DKX4Fq2Kf49r+F9fnHd3ZX5AAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4DBKB3KWyAXE7m15pq63HlYvgetEFShBS6AZT1FahmkkAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSbaGmsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzDEWYIfa/QdLdtVavAAAAA==[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

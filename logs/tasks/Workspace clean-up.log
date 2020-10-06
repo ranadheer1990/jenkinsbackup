@@ -1,0 +1,10 @@
+Started at Sun Oct 04 12:30:20 UTC 2020
+Checking job1
+Checking job2_multibranch
+Checking job2_multibranch » master
+Finished at Sun Oct 04 12:30:20 UTC 2020. 1ms
+Started at Mon Oct 05 12:30:20 UTC 2020
+Checking job1
+Checking job2_multibranch
+Checking job2_multibranch » master
+Finished at Mon Oct 05 12:30:20 UTC 2020. 6ms
